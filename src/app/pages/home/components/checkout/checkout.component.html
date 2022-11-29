@@ -1,0 +1,42 @@
+<div class="container mb-4">
+  <form [formGroup]="formGroup" class="d-flex flex-column align-items-center" (ngSubmit)="onSubmit()">
+    <fieldset class="d-flex flex-column mt-3 border border-dark p-2 rounded w-100">
+      <legend>Datos Personales</legend>
+
+      <label for="">Nombre(s):</label>
+      <input formControlName="nameControl" type="text">
+
+      <label for="">Apellido paterno:</label>
+      <input formControlName="surnameControl" type="text">
+
+      <label for="">Apellido materno:</label>
+      <input formControlName="lastnameControl" type="text">
+
+      <label for="">Número:</label>
+      <input formControlName="phoneControl" type="text">
+    </fieldset>
+
+    <fieldset class="d-flex flex-column mt-3 mb-4 border border-dark p-2 rounded w-100">
+      <legend>Dirección</legend>
+      <label for="">Calle:</label>
+      <input formControlName="streetControl" type="text">
+
+      <label for="">Colonia:</label>
+      <input formControlName="suburbControl" type="text">
+
+      <label for="">Código postal:</label>
+      <input formControlName="codPostControl" type="text">
+
+      <label for="">Ciudad:</label>
+      <input formControlName="cityControl" type="text">
+
+      <label for="">Estado:</label>
+      <input formControlName="stateControl" type="text">
+
+      <label for="">País:</label>
+      <input formControlName="countryControl" type="text">
+    </fieldset>
+
+    <input type="submit">
+  </form>
+</div>
